@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Senparc.CO2NET" Version="0.8.4" />
+    <PackageReference Include="Senparc.CO2NET.Cache.Redis" Version="3.5.2" />
+    <PackageReference Include="Senparc.CO2NET.Cache.Redis.RedLock" Version="2.2.1.1" />
+    <PackageReference Include="Senparc.NeuChar" Version="0.7.5" />
+    <PackageReference Include="Senparc.NeuChar.App" Version="0.5.5" />
+    <PackageReference Include="Senparc.Weixin.Cache.Redis" Version="2.5.9" />
+    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Senparc.Weixin.MP.MvcExtension">
+      <HintPath>Senparc.Weixin.MP.MvcExtension.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
