@@ -66,7 +66,7 @@ namespace my_wxopen.MessageHandler
 
 
         /// <summary>
-        /// 处理文字请求
+        /// 处理文字请求git pull origin master
         /// </summary>
         /// <returns></returns>
         public override IResponseMessageBase OnTextRequest(RequestMessageText requestMessage)
