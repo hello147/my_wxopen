@@ -77,7 +77,7 @@ namespace my_wxopen.Controllers
             }
 
             //自定义MessageHandler，对微信请求的详细判断操作都在这里面。
-            var messageHandler = new WxOpenMessageHandler(Request.GetRequestMemoryStream(), postModel, maxRecordCount);
+            var messageHandler = new WxOpenMessageHandler_1(Request.GetRequestMemoryStream(), postModel, maxRecordCount);
 
 
             try
