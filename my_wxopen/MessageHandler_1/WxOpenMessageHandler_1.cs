@@ -12,18 +12,18 @@ using Senparc.Weixin.MP;
 using Senparc.CO2NET.Utilities;
 using System.Text;
 
-namespace my_wxopen.MessageHandler
+namespace my_wxopen.MessageHandler_1
 {
     /// <summary>
     /// 自定义MessageHandler
     /// 把MessageHandler作为基类，重写对应请求的处理方法
     /// </summary>
-    public partial class WxOpenMessageHandler : WxOpenMessageHandler<WxOpenMessageContext>
+    public partial class WxOpenMessageHandler_1 : WxOpenMessageHandler<WxOpenMessageContext_1>
     {
         private string appId = Config.SenparcWeixinSetting.WxOpenAppId;
         private string appSecret = Config.SenparcWeixinSetting.WxOpenAppSecret;
 
-        public WxOpenMessageHandler(Stream inputStream, PostModel postModel, int maxRecordCount = 0)
+        public WxOpenMessageHandler_1(Stream inputStream, PostModel postModel, int maxRecordCount = 0)
             : base(inputStream, postModel, maxRecordCount)
         {
             //这里设置仅用于测试，实际开发可以在外部更全局的地方设置，

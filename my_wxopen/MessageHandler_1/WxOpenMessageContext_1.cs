@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace my_wxopen.MessageHandler
+namespace my_wxopen.MessageHandler_1
 {
-    public class WxOpenMessageContext : MessageContext<IRequestMessageBase, IResponseMessageBase>
+    public class WxOpenMessageContext_1 : MessageContext<IRequestMessageBase, IResponseMessageBase>
     {
-        public WxOpenMessageContext()
+        public WxOpenMessageContext_1()
         {
             base.MessageContextRemoved += MessageContext_MessageContextRemoved;
         }
@@ -25,7 +25,7 @@ namespace my_wxopen.MessageHandler
              * 为了提高效率，根据WeixinContext中的算法，这里的过期消息会在过期后下一条请求执行之前被清除
              */
 
-            var messageContext = e.MessageContext as WxOpenMessageContext;
+            var messageContext = e.MessageContext as WxOpenMessageContext_1;
             if (messageContext == null)
             {
                 return;//如果是正常的调用，messageContext不会为null
